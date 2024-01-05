@@ -89,7 +89,7 @@ export default function RegisterForm({ setLogin }) {
         </div>
         <div className="flex items-center mt-1">
           <Checkbox
-            color="#2E266F"
+            color="blue"
             // onChange={() => {}}
           />
           <span className="text-[14px] font-[400] pl-1 text-[#2E266F]">I agree to Nombox’s<span className="text-[#7E5CEB] hover:cursor-pointer pl-1">Terms and services</span> and <span className="text-[#7E5CEB] hover:cursor-pointer">Privacy policy</span></span>

@@ -22,7 +22,7 @@ export function StickyNavbar() {
   }, []);
 
   return (
-    <Navbar className="sticky top-0 z-10 max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 !shadow-none !bg-transparent !backdrop-blur-0 border-0">
+    <Navbar className="sticky top-0 z-10 max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 !shadow-none border-0">
       <div className="flex items-center justify-between">
         <Link href="/">
           <img
