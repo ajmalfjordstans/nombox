@@ -2,7 +2,7 @@
 
 export default function CardChef({ chef }) {
   return (
-    <div className="h-[329px] rounded-[10px] overflow-hidden"
+    <div className="min-h-[329px] rounded-[10px] overflow-hidden pb-[10px]"
       style={{ boxShadow: '0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)' }}
     >
       <img src={chef?.image} alt="chef" className="w-full h-[87px] object-cover" />
@@ -17,7 +17,7 @@ export default function CardChef({ chef }) {
         </div>
         <div>
           <span>Cuisines</span>
-          <div className="flex gap-[9px] mt-2">
+          <div className="flex flex-wrap gap-[9px] mt-2">
             {chef?.cuisines?.map((cuisine, id) => {
               return (
                 <button className="bg-[#2E266F] px-[8px] rounded-[4px] text-white" key={id}>{cuisine}</button>

@@ -11,11 +11,11 @@ function Icon({ id, open }) {
   return (
     id === open ?
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-        <path opacity="0.2" fill-rule="evenodd" clipRule="evenodd" d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#7E5CEB" />
+        <path opacity="0.2" fillRule="evenodd" clipRule="evenodd" d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#7E5CEB" />
         <path d="M28.59 28.1599L24 23.5799L19.41 28.1599L18 26.7499L24 20.7499L30 26.7499L28.59 28.1599Z" fill="#7E5CEB" />
       </svg> :
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-        <path opacity="0.2" fill-rule="evenodd" clipRule="evenodd" d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#7E5CEB" />
+        <path opacity="0.2" fillRule="evenodd" clipRule="evenodd" d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#7E5CEB" />
         <path d="M19.41 20.8401L24 25.4201L28.59 20.8401L30 22.2501L24 28.2501L18 22.2501L19.41 20.8401Z" fill="#7E5CEB" />
       </svg>
   );
