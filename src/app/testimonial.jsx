@@ -20,7 +20,7 @@ export default function TestimonialSection() {
   };
   return (
     <div className='bg-[#F8FBFF]'>
-      <div className="container mx-auto pt-[60px] pb-[80px] pl-[5%] xl:pl-0">
+      <div className="container mx-auto pt-[60px] pb-[80px] pl-[5%] pr-[2%] xl:pl-0">
         <span className="text-[#2E266F] text-[24px] font-[600]">What our customers saying</span>
         <div className="mt-[70px] flex relative">
           <Swiper

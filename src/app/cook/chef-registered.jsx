@@ -21,7 +21,7 @@ export default function RegisteredChef() {
   };
 
   return (
-    <div className="container mx-auto pt-[60px] pb-[80px] pl-[5%] xl:pl-0">
+    <div className="container mx-auto pt-[60px] pb-[80px] pl-[5%] pr-[2%] xl:pl-0">
       <div className='w-full flex justify-center'>
         <span className="text-[#2E266F] text-[18px] md:text-[24px] font-[600] ">Chefs registered on our platform</span>
       </div>
