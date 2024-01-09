@@ -5,8 +5,22 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import CardChef from '../cards/card-chef';
 
-export default function ChefSwiper({ chefs }) {
+export default function ChefSwiper({ chefs, size }) {
   const swiperRef = useRef(null);
+
+  const breakpoints = size === 'small'
+    ? {
+      320: { slidesPerView: 1.1, spaceBetween: 15, },
+      530: { slidesPerView: 2.1, spaceBetween: 15, },
+      1440: { slidesPerView: 3.1, spaceBetween: 15, },
+    }
+    : {
+      320: { slidesPerView: 1.1, spaceBetween: 15, },
+      530: { slidesPerView: 2.1, spaceBetween: 15, },
+      780: { slidesPerView: 2.1, spaceBetween: 15, },
+      960: { slidesPerView: 3.1, spaceBetween: 15, },
+      1440: { slidesPerView: 4.1, spaceBetween: 15, },
+    }
 
   const handleNextClick = () => {
     if (swiperRef.current !== null) {
@@ -23,35 +37,14 @@ export default function ChefSwiper({ chefs }) {
       <Swiper
         spaceBetween={50}
         slidesPerView={4}
-        breakpoints={{
-          320: {
-            slidesPerView: 1.1,
-            spaceBetween: 15,
-          },
-          530: {
-            slidesPerView: 2.1,
-            spaceBetween: 15,
-          },
-          780: {
-            slidesPerView: 2.1,
-            spaceBetween: 15,
-          },
-          960: {
-            slidesPerView: 3.1,
-            spaceBetween: 15,
-          },
-          1440: {
-            slidesPerView: 4.1,
-            spaceBetween: 15,
-          },
-        }}
+        breakpoints={breakpoints}
         // onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className='!w-full'
       >
         {chefs?.map((chef) => {
           return (
-            <SwiperSlide key={chef.id}><CardChef chef={chef}/></SwiperSlide>
+            <SwiperSlide key={chef.id}><CardChef chef={chef} /></SwiperSlide>
           )
         })}
       </Swiper>
