@@ -8,7 +8,7 @@ import Call from './call'
 import Compliance from './compliance'
 import Image from 'next/image'
 
-export default function page() {
+export default function Page() {
   const [progress, setProgress] = useState(50)
   const [open, setOpen] = useState('profile');
   return (
