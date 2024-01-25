@@ -33,7 +33,7 @@ export default function CardDish({ dish }) {
           </div>
         </div>
         <div className="pl-[23px] pr-[16px] transform translate-y-[-20px]">
-          <span className="text-[14px] text-[#2E266F]">{dish?.name}</span>
+          <span className="text-[14px] text-primary">{dish?.name}</span>
           <div className="w-full flex justify-between mt-2">
             <span className="text-[16px] font-[600] text-[#7E5CEB]">£{dish?.price.toFixed(2)}</span>
             <div className="bg-[#FF922C] rounded-[4px] px-[8px] py-[4px] hover:cursor-pointer text-[10px] text-white">{dish?.portions} portions available</div>

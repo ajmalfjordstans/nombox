@@ -23,8 +23,8 @@ export function StickyNavbar() {
     );
   }, []);
 
-  useEffect(()=>{
-    console.log(pathname);
+  useEffect(() => {
+    // console.log(pathname);
   })
 
   return (

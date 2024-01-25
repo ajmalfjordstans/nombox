@@ -3,7 +3,7 @@ import { Button } from '@material-tailwind/react'
 
 export default function PersonalDetails() {
   return (
-    <div className='w-full bg-[white] shadow-custom grid grid-cols-2 md:grid-cols-3 text-[#2E266F] p-[30px] rounded-[10px] gap-[10px]'>
+    <div className='w-full bg-[white] shadow-custom grid grid-cols-2 md:grid-cols-3 text-primary p-[30px] rounded-[10px] gap-[10px]'>
       <div className='flex flex-col gap-[20px]'>
         <div className='flex flex-col'>
           <span className='text-[12px] md:text-[14px] font-[400]'>First name</span>

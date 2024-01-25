@@ -9,7 +9,7 @@ export default function ChefAbout() {
           <div className="grid grid-cols-3">
             <img src='/images/temp/profile.png' alt="" className=" h-[78px] md:h-[96px] w-[78px] md:w-[96px] rounded-full border-white border-[3px]" />
             <div className="col-span-2 h-full flex flex-col justify-center">
-              <span className="text-[#2E266F] text-[16px] leading-[22px] font-[600]">Mathew Willa</span>
+              <span className="text-primary text-[16px] leading-[22px] font-[600]">Mathew Willa</span>
               <div className="my-2 flex gap-1">
                 {Array(5).fill().map((_, index) => (
                   <Image
@@ -46,7 +46,7 @@ export default function ChefAbout() {
         </div>
       </div>
       <div className="p-[27px] md:p-[36px] bg-white rounded-[8px] shadow-custom">
-        <span className="text-[#2E266F] text-[18px] font-[600] leading-[22px]">Hygiene rating</span>
+        <span className="text-primary text-[18px] font-[600] leading-[22px]">Hygiene rating</span>
         <Image
           height={164}
           width={351}

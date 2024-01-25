@@ -10,11 +10,11 @@ export default function MyProfile() {
     <div className='p-[30px] max-w-[1200px] mx-auto w-full flex flex-col overflow-hidden'>
       <PersonalDetails />
       <div className='mt-[30px]'>
-        <span className='text-[20px] font-[600] text-[#2E266F]'>Following</span>
+        <span className='text-[20px] font-[600] text-primary'>Following</span>
         <ChefSwiper chefs={ChefsNear} size={'small'} />
       </div>
       <div className='mt-[30px]'>
-        <span className='text-[20px] font-[600] text-[#2E266F]'>Saved items</span>
+        <span className='text-[20px] font-[600] text-primary'>Saved items</span>
         <DishesSwiper data={DailyDishes} size={'small'}/>
       </div>
 

@@ -7,14 +7,14 @@ import {
 
 export default function RegisterForm({ setLogin }) {
   return (
-    <div className="text-[#2E266F] pb-8 px-[5%] md:px-[8%] pt-[1vh] md:pt-[15vh]">
+    <div className="text-primary pb-8 px-[5%] md:px-[8%] pt-[1vh] md:pt-[15vh]">
       <div className="w-full flex justify-center ">
         <span className="text-[24px] md:text-[30px] font-[700] text-center">Create your account</span>
       </div>
       <div className="mt-[10px] md:mt-[40px]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-5">
           <div className="md:mb-4">
-            <span className="text-[14px] md:text-[16px] font-[400] text-[#2E266F]">First Name</span>
+            <span className="text-[14px] md:text-[16px] font-[400] text-primary">First Name</span>
             <Input
               size="lg"
               placeholder="John"
@@ -26,7 +26,7 @@ export default function RegisterForm({ setLogin }) {
           </div>
 
           <div className="md:mb-4">
-            <span className="text-[14px] md:text-[16px] font-[400] text-[#2E266F]">Last Name</span>
+            <span className="text-[14px] md:text-[16px] font-[400] text-primary">Last Name</span>
             <Input
               size="lg"
               placeholder="Doe"
@@ -38,7 +38,7 @@ export default function RegisterForm({ setLogin }) {
           </div>
 
           <div className="md:mb-4">
-            <span className="text-[14px] md:text-[16px] font-[400] text-[#2E266F]">Email</span>
+            <span className="text-[14px] md:text-[16px] font-[400] text-primary">Email</span>
             <Input
               size="lg"
               placeholder="example@gmail.com"
@@ -50,7 +50,7 @@ export default function RegisterForm({ setLogin }) {
           </div>
 
           <div className="md:mb-4">
-            <span className="text-[14px] md:text-[16px] font-[400] text-[#2E266F]">Phone</span>
+            <span className="text-[14px] md:text-[16px] font-[400] text-primary">Phone</span>
             <Input
               size="lg"
               placeholder="123-456-7890"
@@ -62,7 +62,7 @@ export default function RegisterForm({ setLogin }) {
           </div>
 
           <div className="md:mb-4">
-            <span className="text-[14px] md:text-[16px] font-[400] text-[#2E266F]">Password</span>
+            <span className="text-[14px] md:text-[16px] font-[400] text-primary">Password</span>
             <Input
               size="lg"
               type="password"
@@ -75,7 +75,7 @@ export default function RegisterForm({ setLogin }) {
           </div>
 
           <div>
-            <span className="text-[14px] md:text-[16px] font-[400] text-[#2E266F]">Confirm Password</span>
+            <span className="text-[14px] md:text-[16px] font-[400] text-primary">Confirm Password</span>
             <Input
               size="lg"
               type="password"
@@ -92,7 +92,7 @@ export default function RegisterForm({ setLogin }) {
             color="blue"
             // onChange={() => {}}
           />
-          <span className="text-[14px] font-[400] pl-1 text-[#2E266F]">I agree to Nombox’s<span className="text-[#7E5CEB] hover:cursor-pointer pl-1">Terms and services</span> and <span className="text-[#7E5CEB] hover:cursor-pointer">Privacy policy</span></span>
+          <span className="text-[14px] font-[400] pl-1 text-primary">I agree to Nombox’s<span className="text-[#7E5CEB] hover:cursor-pointer pl-1">Terms and services</span> and <span className="text-[#7E5CEB] hover:cursor-pointer">Privacy policy</span></span>
         </div>
         <div className="flex justify-end">
           <Button className="mt-3 bg-[#7E5CEB] md:max-w-[350px]" fullWidth>

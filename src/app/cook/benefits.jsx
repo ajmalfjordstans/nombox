@@ -1,6 +1,6 @@
 export default function Benefits() {
   return (
-    <div className="container mx-auto pt-[50px] md:pt-[70px] pb-[80px] px-[5%] xl:px-0 flex flex-col items-center text-[#2E266F]">
+    <div className="container mx-auto pt-[50px] md:pt-[70px] pb-[80px] px-[5%] xl:px-0 flex flex-col items-center text-primary">
       <span className="text-[18px] md:text-[24px] font-[700] md:pb-[30px]">Nombox benefits</span>
       <span className="text-[14px] md:text-[18px] font-[600] leading-[30px] py-[30px] md:py-[7px] ">Take your HomeCook business to the next level with  powerful business tools.</span>
       <span className="text-[14px] md:text-[16px] font-[400] leading-[30px] text-[#707070]">We’ll take of everything, while you do what love the most - Cooking!</span>

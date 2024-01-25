@@ -30,7 +30,7 @@ export function AccordionCustomStyles() {
       <Accordion open={open === 1} icon={<Icon id={1} open={open} />} className="mb-[18px] rounded-lg bg-white">
         <AccordionHeader
           onClick={() => handleOpen(1)}
-          className="h-[90px] px-[38px] py-[25px] text-[14px] md:text-[18px] leading-[30px] font-[600] rounded-[10px] text-[#2E266F]"
+          className="h-[90px] px-[38px] py-[25px] text-[14px] md:text-[18px] leading-[30px] font-[600] rounded-[10px] text-primary"
           style={{ boxShadow: ' 0px 6px 20px 0px rgba(13, 51, 32, 0.10)' }}
         >
           Prepared by Home Chefs
@@ -42,7 +42,7 @@ export function AccordionCustomStyles() {
       <Accordion open={open === 2} icon={<Icon id={2} open={open} />} className="mb-[18px] rounded-lg bg-white">
         <AccordionHeader
           onClick={() => handleOpen(2)}
-          className="h-[90px] px-[38px] py-[25px] text-[14px] md:text-[18px] leading-[30px] font-[600] rounded-[10px] text-[#2E266F]"
+          className="h-[90px] px-[38px] py-[25px] text-[14px] md:text-[18px] leading-[30px] font-[600] rounded-[10px] text-primary"
           style={{ boxShadow: ' 0px 6px 20px 0px rgba(13, 51, 32, 0.10)' }}
         >
           Hygiene certificate Level 2

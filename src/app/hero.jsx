@@ -7,10 +7,10 @@ export default function Hero() {
   const [location, setLocation] = React.useState("");
   const onChange = ({ target }) => setLocation(target.value);
   return (
-    <>
-      <div className="container px-8 py-10 mx-auto flex justify-between items-center flex-col md:flex-row min-h-[65vh]">
+    <div className="bg-white">
+      <div className="container px-8 py-10 mx-auto flex justify-between items-center flex-col md:flex-row min-h-[65vh] ">
         <div className="w-full md:max-w-[50%]">
-          <span className="text-[#2E266F] text-[30px] md:text-[48px] font-[700] leading-[120%]">Unbox the Joy of Home Cooked Food.</span>
+          <span className="text-primary text-[30px] md:text-[48px] font-[700] leading-[120%]">Unbox the Joy of Home Cooked Food.</span>
           <div className="relative flex w-full mt-5">
             <Input
               type="text"
@@ -51,7 +51,6 @@ export default function Hero() {
           <img src="/images/hero.svg" alt="hero" className="h-[320px]" />
         </div>
       </div>
-      
-    </>
+    </div>
   )
 }

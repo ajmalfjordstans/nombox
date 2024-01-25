@@ -72,7 +72,7 @@ export default function ActiveOrder() {
   return (
     <div className='mt-[25px] flex flex-col gap-[25px]'>
       {/* Card1 */}
-      <div className='w-full bg-[white] shadow-custom flex flex-col text-[#2E266F] p-[10px] rounded-[10px] gap-[10px]'>
+      <div className='w-full bg-[white] shadow-custom flex flex-col text-primary p-[10px] rounded-[10px] gap-[10px]'>
         <div className='flex gap-[10px]'>
           <Image
             src='/images/temp/dish.png'
@@ -119,7 +119,7 @@ export default function ActiveOrder() {
 
 
       {/* Card2 */}
-      <div className='w-full bg-[white] shadow-custom flex flex-col text-[#2E266F] p-[10px] rounded-[10px] gap-[10px]'>
+      <div className='w-full bg-[white] shadow-custom flex flex-col text-primary p-[10px] rounded-[10px] gap-[10px]'>
         <div className='flex gap-[10px]'>
           <Image
             src='/images/temp/dish2.png'

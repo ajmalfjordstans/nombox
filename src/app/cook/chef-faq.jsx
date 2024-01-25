@@ -29,13 +29,13 @@ export default function ChefFAQ() {
   return (
     <div className="container mx-auto pt-[60px] pb-[80px] px-[5%] xl:px-0">
       <div className='w-full flex justify-center'>
-        <span className="text-[#2E266F] text-[18px] md:text-[24px] font-[600] ">FAQs</span>
+        <span className="text-primary text-[18px] md:text-[24px] font-[600] ">FAQs</span>
       </div>
       <div className="w-full max-w-[850px] mx-auto mt-[60px]  ">
         <Accordion open={open === 1} icon={<Icon id={1} open={open} />} className="mb-[16px] md:mb-[22px] rounded-lg border border-blue-gray-100 px-[24px] md:px-[40px] py-[23px] md:py-[28px]">
           <AccordionHeader
             onClick={() => handleOpen(1)}
-            className={`border-b-0 transition-colors text-[#2E266F]`}
+            className={`border-b-0 transition-colors text-primary`}
           >
             What is Material Tailwind?
           </AccordionHeader>
@@ -47,7 +47,7 @@ export default function ChefFAQ() {
         <Accordion open={open === 2} icon={<Icon id={2} open={open} />} className="mb-[16px] md:mb-[22px] rounded-lg border border-blue-gray-100 px-[24px] md:px-[40px] py-[23px] md:py-[28px]">
           <AccordionHeader
             onClick={() => handleOpen(2)}
-            className={`border-b-0 transition-colors text-[#2E266F]`}
+            className={`border-b-0 transition-colors text-primary`}
           >
             What is my investment?
 
@@ -60,7 +60,7 @@ export default function ChefFAQ() {
         <Accordion open={open === 3} icon={<Icon id={3} open={open} />} className="mb-[16px] md:mb-[22px] rounded-lg border border-blue-gray-100 px-[24px] md:px-[40px] py-[23px] md:py-[28px]">
           <AccordionHeader
             onClick={() => handleOpen(3)}
-            className={`border-b-0 transition-colors text-[#2E266F]`}
+            className={`border-b-0 transition-colors text-primary`}
           >
             How will I make money?
           </AccordionHeader>
@@ -72,7 +72,7 @@ export default function ChefFAQ() {
         <Accordion open={open === 4} icon={<Icon id={4} open={open} />} className="mb-[16px] md:mb-[22px] rounded-lg border border-blue-gray-100 px-[24px] md:px-[40px] py-[23px] md:py-[28px]">
           <AccordionHeader
             onClick={() => handleOpen(4)}
-            className={`border-b-0 transition-colors text-[#2E266F]`}
+            className={`border-b-0 transition-colors text-primary`}
           >
             What about licenses?
           </AccordionHeader>

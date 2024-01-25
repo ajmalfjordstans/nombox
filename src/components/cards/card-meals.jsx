@@ -12,7 +12,7 @@ export default function CardMeals({data}) {
         className="h-[30px] w-[187px] bg-[#7E5CEB] rounded-tr-[5px] rounded-br-[5px] flex justify-center items-center text-white text-[16px] font-[600] transform translate-y-[26px]"
       >{data?.type}</div>
       <div className="absolute bottom-[12px] left-[12px] w-[92%] md:min-h-[101px] bg-white rounded-[8px] flex flex-col p-[20px]">
-        <span className="text-[16px] leading-[125%] tracking-[-0.24px] text-[#2E266F]">{data?.validity}</span>
+        <span className="text-[16px] leading-[125%] tracking-[-0.24px] text-primary">{data?.validity}</span>
         <span className="text-[12px] leading-[20px] text-[#AEAEAE]">{data?.kitchen}</span>
         <div className="flex w-full justify-between flex-col md:flex-row flex-wrap">
           <div className="flex gap-2">

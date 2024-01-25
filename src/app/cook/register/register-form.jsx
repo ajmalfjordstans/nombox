@@ -13,7 +13,7 @@ export default function ChefRegisterForm(darkTheme) {
   // console.log(darkTheme);
   return (
     <div className="mt-[10px] md:mt-[40px]">
-      <div className={`grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-5 ${Dark ? "text-white" : "text-[#2E266F]"}`}>
+      <div className={`grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-5 ${Dark ? "text-white" : "text-primary"}`}>
         <div className="md:mb-4">
           <span className="text-[14px] md:text-[16px] font-[400] ">First Name</span>
           <Input
@@ -93,7 +93,7 @@ export default function ChefRegisterForm(darkTheme) {
           color="blue"
         // onChange={() => {}}
         />
-        <span className={`text-[14px] font-[400] pl-1 ${Dark ? "text-white" : "text-[#2E266F]"}`}>I agree to Nombox’s<span className={`${Dark ? "text-white" : "text-[#7E5CEB]"} hover:cursor-pointer pl-1`}>Terms and services</span> and <span className={`${Dark ? "text-white" : "text-[#7E5CEB]"} hover:cursor-pointer pl-1`}>Privacy policy</span></span>
+        <span className={`text-[14px] font-[400] pl-1 ${Dark ? "text-white" : "text-primary"}`}>I agree to Nombox’s<span className={`${Dark ? "text-white" : "text-[#7E5CEB]"} hover:cursor-pointer pl-1`}>Terms and services</span> and <span className={`${Dark ? "text-white" : "text-[#7E5CEB]"} hover:cursor-pointer pl-1`}>Privacy policy</span></span>
       </div>
       <div className="flex justify-end">
         <Button className="mt-3 bg-[#7E5CEB] md:max-w-[350px]" fullWidth>

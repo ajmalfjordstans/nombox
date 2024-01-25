@@ -12,6 +12,9 @@ module.exports = withMT({
       boxShadow: {
         custom: '0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24)',
       },
+      colors: {
+        primary: '#2E266F',
+      }
     },
   },
   plugins: [],

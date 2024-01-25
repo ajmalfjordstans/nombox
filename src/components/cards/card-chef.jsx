@@ -10,7 +10,7 @@ export default function CardChef({ chef }) {
         <img src={chef?.avatar} alt="" className="h-[50px] w-[50px] rounded-full border-white border-[3px] transform translate-y-[-25px]" />
       </div>
       <div className="flex flex-col items-center gap-[10px] px-[15px]">
-        <span className="text-[#2E266F] text-[16px] leading-[22px] font-[600]">{chef?.name}</span>
+        <span className="text-primary text-[16px] leading-[22px] font-[600]">{chef?.name}</span>
         <div className="mt-[10px] text-[10px] flex gap-[7px]">
           <div className="bg-[#FFB200] w-[22px] h-[16px] rounded-[3.14px] flex justify-center items-center font-[600] text-white">{chef?.rating}</div>
           <span className="text-[#AEAEAE]">{chef?.reviews} reviews</span>

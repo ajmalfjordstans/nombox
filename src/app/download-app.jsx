@@ -2,7 +2,7 @@ export default function DownloadApp() {
   return (
     <div className="bg-[#F8FBFF]">
       <div className="container mx-auto pt-[60px] pb-[80px] grid grid-cols-1 md:grid-cols-2 px-[5%] xl:px-0">
-        <div className="text-[#2E266F] flex flex-col w-full my-auto">
+        <div className="text-primary flex flex-col w-full my-auto">
           <span className="text-[24px] md:text-[44px] leading-[36px] md:leading-[62px] font-[600] border-l-[5px] md:border-l-[10px] border-[#7E5CEB] pl-[23px] md:pl-[40px]">Download App For <br />
             Exciting Deals
           </span>
