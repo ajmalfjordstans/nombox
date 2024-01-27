@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Benefits() {
   return (
     <div className="container mx-auto pt-[50px] md:pt-[70px] pb-[80px] px-[5%] xl:px-0 flex flex-col items-center text-primary">
@@ -6,7 +8,7 @@ export default function Benefits() {
       <span className="text-[14px] md:text-[16px] font-[400] leading-[30px] text-[#707070]">We’ll take of everything, while you do what love the most - Cooking!</span>
       <div className="grid grid-cols-1 md:grid-cols-2 mt-[50px]">
         <div className="flex h-full items-center">
-          <img src="/images/benefits.svg" alt="" />
+          <Image src="/images/benefits.svg" alt="" height={520} width={428}/>
         </div>
         <div className="flex flex-col gap-[30px] md:gap-[40px] ">
           <div className="flex flex-col">

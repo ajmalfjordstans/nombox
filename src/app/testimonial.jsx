@@ -4,6 +4,7 @@ import React, { useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import CardTestimonial from '@/components/cards/card-testimonial';
+import Image from 'next/image';
 
 export default function TestimonialSection() {
   const swiperRef = useRef(null);
@@ -72,10 +73,10 @@ export default function TestimonialSection() {
           <div className='flex'>
             {/* <button onClick={handlePrevClick} className="h-[48px] w-[48px] bg-white rounded-full flex justify-center items-center transform translate-x-[-24px] border-[#EAEAEA] border-[2px] z-[2]">
           </button> */}
-            <img src="/logo/prev-arrow.svg" alt="" className='h-[48px] w-[48px]' onClick={handlePrevClick} />
+            <Image height={48} width={48} src="/logo/prev-arrow.svg" alt="" className='h-[48px] w-[48px]' onClick={handlePrevClick} />
             {/* <button onClick={handleNextClick} className="h-[48px] w-[48px] bg-white rounded-full flex justify-center items-center transform translate-x-[24px] border-[#EAEAEA] border-[2px] z-[2]">
           </button> */}
-            <img src="/logo/next-arrow.svg" alt="" className='h-[48px] w-[48px]' onClick={handleNextClick} />
+            <Image height={48} width={48} src="/logo/next-arrow.svg" alt="" className='h-[48px] w-[48px]' onClick={handleNextClick} />
           </div>
         </div>
       </div>

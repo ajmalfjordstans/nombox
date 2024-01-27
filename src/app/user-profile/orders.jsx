@@ -1,3 +1,5 @@
+'use client'
+
 import ActiveOrder from '@/components/userProfile/active-order'
 import PastOrder from '@/components/userProfile/past-order'
 import React, { useState } from 'react'

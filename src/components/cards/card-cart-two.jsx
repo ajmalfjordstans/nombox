@@ -79,7 +79,7 @@ export default function CardCartTwo() {
               variant='filled'
               color='blue'
               className='h-[48px] p-3 rounded-[5px] bg-[#7E5CEB]'
-              startIcon="/images/logo/editOrder.svg "
+             
             >
               View Cart
             </Button>
@@ -91,7 +91,7 @@ export default function CardCartTwo() {
           variant='filled'
           color='blue'
           className='h-[48px] w-full p-3 rounded-[5px] bg-[#7E5CEB]'
-          startIcon="/images/logo/editOrder.svg"
+          
         >
           View Cart
         </Button>

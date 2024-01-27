@@ -7,6 +7,7 @@ import {
   Button,
   Typography,
 } from "@material-tailwind/react";
+import Image from "next/image";
 
 export default function LoginForm({ setLogin }) {
   return (
@@ -15,7 +16,7 @@ export default function LoginForm({ setLogin }) {
         <span className="text-[16px] text-primary">Welcome back</span>
         <span className="text-[24px] md:text-[30px] font-[600] text-primary mt-2">Login to your account</span>
         <button className="bg-[#2959AC] rounded-[5px] flex items-center justify-center gap-2 mt-2">
-          <img src="/logo/facebook.svg" alt="" className="h-[44px] md:h-[47px]" />
+          <Image height={47} width={47} src="/logo/facebook.svg" alt="" className="h-[44px] md:h-[47px]" />
           <span className="text-[14px] md:text-[16px] text-white font-[500] leading-[128.9%]">Continue with Facebook</span>
         </button>
         <div className="flex justify-between items-center bg-gray h-[40px] md:h-[60px]">

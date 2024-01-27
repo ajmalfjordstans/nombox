@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function CookHero() {
@@ -23,7 +24,7 @@ export default function CookHero() {
           </div>
         </div>
         <div>
-          <img src="/images/cookhero.svg" alt="hero" className="h-[320px]" />
+          <Image src="/images/cookhero.svg" alt="hero" className="h-[320px]" height={414} width={320}/>
         </div>
       </div>
       <div className="bg-[#F8FBFF]">
@@ -31,17 +32,17 @@ export default function CookHero() {
           <span className="text-[18px] md:text-[24px] font-[600] text-primary">Earn money doing what you love </span>
           <div className="grid grid-cols-1 md:grid-cols-3 w-full mt-[40px] md:mt-[67px] gap-[34px]">
             <div className="flex flex-col items-center gap-3 mx-auto w-full max-w-[235px] text-center">
-              <img src="/logo/cookwhatyoulove1.svg" alt="" className="h-[80px] md:h-[120px]"/>
+              <Image height={120} width={120} src="/logo/cookwhatyoulove1.svg" alt="" className="h-[80px] md:h-[120px]"/>
               <span className="text-[16px] md:text-[18px] font-[500] leading-[30px] text-primary">Your business, Your rules & prices</span>
               <span className="text-[14px] md:text-[16px] leading-[24px] md:leading-[30px] text-[#707070]">Total flexibility and control over your menu.</span>
             </div>
             <div className="flex flex-col items-center gap-3 mx-auto w-full max-w-[235px] text-center">
-              <img src="/logo/cookwhatyoulove2.svg" alt="" className="h-[80px] md:h-[120px]"/>
+              <Image height={120} width={120} src="/logo/cookwhatyoulove2.svg" alt="" className="h-[80px] md:h-[120px]"/>
               <span className="text-[16px] md:text-[18px] font-[500] leading-[30px] text-primary">Set your own schedule</span>
               <span className="text-[14px] md:text-[16px] leading-[24px] md:leading-[30px] text-[#707070]">You choose which days and times your menu is active.</span>
             </div>
             <div className="flex flex-col items-center gap-3 mx-auto w-full max-w-[235px] text-center">
-              <img src="/logo/cookwhatyoulove3.svg" alt="" className="h-[80px] md:h-[120px]"/>
+              <Image height={120} width={120} src="/logo/cookwhatyoulove3.svg" alt="" className="h-[80px] md:h-[120px]"/>
               <span className="text-[16px] md:text-[18px] font-[500] leading-[30px] text-primary">Build loyal customers</span>
               <span className="text-[14px] md:text-[16px] leading-[24px] md:leading-[30px] text-[#707070]">Interact with your customers using our App.</span>
             </div>

@@ -1,6 +1,7 @@
 "use client"
 
 import { Input, Button } from "@material-tailwind/react";
+import Image from "next/image";
 import React from "react";
 
 export default function Hero() {
@@ -33,22 +34,22 @@ export default function Hero() {
             <span className=" text-[#707070]">Or Select from polpular locations</span>
             <div className="flex gap-[15px]">
               <div className="bg-[#7E5CEB] px-[15px] py-[7.5px] rounded-[25px] flex items-center hover:cursor-pointer">
-                <img src="/logo/Location-white.svg" alt="" className="h-[11px] w-[10px] mr-2" />
+                <Image height={11} width={10} src="/logo/Location-white.svg" alt="" className="h-[11px] w-[10px] mr-2" />
                 <span className="text-white">Belfast</span>
               </div>
               <div className="bg-white px-[15px] py-[7.5px] rounded-[25px] flex items-center border-[2px] border-[#7E5CEB] hover:cursor-pointer">
-                <img src="/logo/Location.svg" alt="" className="h-[11px] w-[10px] mr-2" />
+                <Image height={11} width={10} src="/logo/Location.svg" alt="" className="h-[11px] w-[10px] mr-2" />
                 <span className="text-[#7E5CEB]">Cardiff</span>
               </div>
               <div className="bg-white px-[15px] py-[7.5px] rounded-[25px] flex items-center border-[2px] border-[#7E5CEB] hover:cursor-pointer">
-                <img src="/logo/Location.svg" alt="" className="h-[11px] w-[10px] mr-2" />
+                <Image height={11} width={10} src="/logo/Location.svg" alt="" className="h-[11px] w-[10px] mr-2" />
                 <span className="text-[#7E5CEB]">Leicester</span>
               </div>
             </div>
           </div>
         </div>
         <div>
-          <img src="/images/hero.svg" alt="hero" className="h-[320px]" />
+          <Image height={320} width={513} src="/images/hero.svg" alt="hero" className="h-[320px]" />
         </div>
       </div>
     </div>

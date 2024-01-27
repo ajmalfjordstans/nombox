@@ -71,7 +71,7 @@ export default function CardCartOne() {
                 variant='filled'
                 color='blue'
                 className=' p-3 rounded-[5px] bg-[#7E5CEB]'
-                startIcon="/images/logo/editOrder.svg"
+               
               >
                 Edit Order
               </Button>
@@ -107,7 +107,7 @@ export default function CardCartOne() {
             variant='filled'
             color='blue'
             className=' p-3 rounded-[5px] bg-[#7E5CEB]'
-            startIcon="/images/logo/editOrder.svg"
+           
           >
             Edit Order
           </Button>

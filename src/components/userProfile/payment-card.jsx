@@ -16,6 +16,7 @@ export default function PaymentCard() {
               height={38}
               width={58}
               className=''
+              alt='visa'
             ></Image>
             <span className='text-[14px] md:text-[18px] text-[#707070]'>4592 00** **** 0125</span>
           </div>
@@ -41,6 +42,7 @@ export default function PaymentCard() {
               height={38}
               width={58}
               className=''
+              alt='card'
             ></Image>
             <span className='text-[14px] md:text-[18px] text-[#707070]'>6766 00** **** 7899</span>
           </div>

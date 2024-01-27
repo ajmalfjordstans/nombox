@@ -7,7 +7,7 @@ export default function ChefAbout() {
       <div className="p-[27px] md:p-[36px] bg-white rounded-[8px] shadow-custom transform translate-y-[-50px]">
         <div>
           <div className="grid grid-cols-3">
-            <img src='/images/temp/profile.png' alt="" className=" h-[78px] md:h-[96px] w-[78px] md:w-[96px] rounded-full border-white border-[3px]" />
+            <Image src='/images/temp/profile.png' height={96} width={96} alt="" className=" h-[78px] md:h-[96px] w-[78px] md:w-[96px] rounded-full border-white border-[3px]" />
             <div className="col-span-2 h-full flex flex-col justify-center">
               <span className="text-primary text-[16px] leading-[22px] font-[600]">Mathew Willa</span>
               <div className="my-2 flex gap-1">

@@ -7,7 +7,7 @@ export function ProgressDark({ progress }) {
         background: `conic-gradient(#FFFFFF ${progress * 3.6}deg, #2E266F 0deg)`
       }}
     >
-      <span className="progress-value h-[38px] w-[38px] bg-[#7E5CEB] rounded-full flex justify-center items-center font-[700] text-[14px] leading-[21px] text-white">
+      <span className="progress-value h-[35px] w-[35px] bg-[#7E5CEB] rounded-full flex justify-center items-center font-[700] text-[14px] leading-[21px] text-white">
         {progress}%
       </span>
     </div>
@@ -21,7 +21,7 @@ export function ProgressLight({ progress }) {
         background: `conic-gradient(#7E5CEB ${progress * 3.6}deg, #FFFFFF 0deg)`
       }}
     >
-      <span className="progress-value h-[38px] w-[38px] bg-[#FFFFFF] rounded-full flex justify-center items-center font-[700] text-[14px] leading-[21px] text-[#7E5CEB]">
+      <span className="progress-value h-[35px] w-[35px] bg-[#FFFFFF] rounded-full flex justify-center items-center font-[700] text-[14px] leading-[21px] text-[#7E5CEB]">
         {progress}%
       </span>
     </div>

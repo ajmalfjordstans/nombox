@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function DownloadApp() {
   return (
     <div className="bg-[#F8FBFF]">
@@ -8,12 +10,12 @@ export default function DownloadApp() {
           </span>
           <span className="pl-[28px] md:pl-[50px] pt-[25px] text-[14px] md:text-[16px] leading-[30px] max-w-[432px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. </span>
           <div className="flex flex-col md:flex-row gap-5 pl-[28px] md:pl-[50px] pt-[50px]">
-            <img src="/logo/playstore.png" alt="" className="h-[64px] w-[193px] mx-auto md:mx-0" />
-            <img src="/logo/appstore.png" alt="" className="h-[64px] w-[193px] mx-auto md:mx-0" />
+            <Image height={64} width={193} src="/logo/playstore.png" alt="" className="h-[64px] w-[193px] mx-auto md:mx-0" />
+            <Image height={64} width={193} src="/logo/appstore.png" alt="" className="h-[64px] w-[193px] mx-auto md:mx-0" />
           </div>
         </div>
         <div className="flex justify-center">
-          <img src="/images/home/app.svg" alt="" />
+          <Image height={650} width={375} src="/images/home/app.svg" alt="" />
         </div>
       </div>
     </div>
