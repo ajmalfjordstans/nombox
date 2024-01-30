@@ -72,7 +72,7 @@ export function Card() {
 
 export default function Earnings() {
   return (
-    <>
+    <div className='px-[5%] flex flex-col gap-[20px] py-[30px]'>
       <div className='w-full rounded-[10px] p-[15px] md:p-[30px] bg-white shadow-custom flex md:justify-between flex-wrap justify-center gap-[20px]'>
         <div className='flex'>
           <div className='text-[#7E5CEB] pr-[30px] border-r-[1px] border-[#AEAEAE]'>
@@ -95,6 +95,6 @@ export default function Earnings() {
         <div className='w-full h-[1px] bg-[#EEF0F6]'></div>
         {Card()}
       </div>
-    </>
+    </div>
   )
 }

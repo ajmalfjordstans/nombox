@@ -93,7 +93,7 @@ export default function Dishes() {
   ]
 
   return (
-    <>
+    <div className='px-[5%] flex flex-col gap-[20px] py-[30px]'>
       <div className='flex w-full md:justify-end gap-[10px] mt-[30px]'>
         <Button
           variant='outlined'
@@ -142,6 +142,6 @@ export default function Dishes() {
           })}
         </div>
       }
-    </>
+    </div>
   )
 }

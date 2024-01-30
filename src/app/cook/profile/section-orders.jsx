@@ -136,7 +136,7 @@ export default function Orders() {
     },
   ]
   return (
-    <>
+    <div className='px-[5%] flex flex-col gap-[20px] py-[30px]'>
       <div className='w-full border-b-[1px] border-[#E3E3E3] flex font-[600] text-[14px] md:text-[16px] leading-[24px] text-[#707070]'>
         <span
           className={`${view == "Active" ? "text-[#7E5CEB] border-b-[4px] border-[#7E5CEB]" : ""} pb-[10px] hover:cursor-pointer px-[10px]`}
@@ -169,6 +169,6 @@ export default function Orders() {
           })}
         </div>
       }
-    </>
+    </div>
   )
 }

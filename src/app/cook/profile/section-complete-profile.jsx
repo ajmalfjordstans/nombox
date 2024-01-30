@@ -7,7 +7,7 @@ import Compliance from './complete-compliance';
 export default function CompleteProfile({ progress }) {
   const [open, setOpen] = useState('profile');
   return (
-    <>
+    <div className='px-[5%] flex flex-col gap-[20px] py-[30px]'>
       <div className='w-full flex flex-col md:flex-row justify-between gap-[20px]'>
         <p className='font-[600] text-[14px] md:text-[18px] leading-[22px] text-primary'>Complete your profile</p>
         <div className='w-full md:w-[260px]'>
@@ -25,6 +25,6 @@ export default function CompleteProfile({ progress }) {
       <Call/>
       <Compliance/>
 
-    </>
+    </div>
   )
 }

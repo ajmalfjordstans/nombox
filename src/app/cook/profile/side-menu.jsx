@@ -4,9 +4,9 @@ import React from 'react'
 
 export default function SideMenu({ progress, showSection, setShowSection }) {
   return (
-    <div className={`${showSection == 'complete' ? "w-[88px]" : "w-[344px]"} h-[full] bg-white relative hidden md:block transition-width duration-300 ease-in-out`}>
+    <div className={`${showSection == 'complete' || showSection == 'calendar' ? "w-[88px]" : "w-[344px]"} h-[full] bg-white relative hidden md:block transition-width duration-300 ease-in-out`}>
       <div className='h-[120px] w[88px]-full bg-[#7E5CEB] flex justify-center items-center'>
-        {showSection == "complete" ? (
+        {showSection == "complete" || showSection == 'calendar' ? (
           <ProgressDark progress={progress} />
         ) : (
           <div className='w-full maxw-[260px] px-[30px] transition-opacity duration-1000 ease-in-out'>
@@ -25,7 +25,7 @@ export default function SideMenu({ progress, showSection, setShowSection }) {
         <div className={`${showSection == "dishes" ? "bg-[#ECE7FC]" : "bg-white"} w-full`}>
           <div className='flex gap-[20px] hover:cursor-pointer pl-[30px] py-[20px]' onClick={() => setShowSection('dishes')}>
             <Image src="/logo/chef/sidebar/dish.svg" height="24" width="24" className='hover:cursor-pointer' alt=''/>
-            {showSection == "complete" ? "" : (
+            {showSection == "complete" || showSection == 'calendar' ? "" : (
               <p className={`text-[16px] leading-[24px] text-primary`}>My dishes</p>
             )}
           </div>
@@ -33,7 +33,7 @@ export default function SideMenu({ progress, showSection, setShowSection }) {
         <div className={`${showSection == "calendar" ? "bg-[#ECE7FC]" : "bg-white"} w-full`}>
           <div className='flex gap-[20px] hover:cursor-pointer pl-[30px] py-[20px]' onClick={() => setShowSection('calendar')}>
             <Image src="/logo/chef/sidebar/calendar.svg" height="24" width="24" className='hover:cursor-pointer' alt=''/>
-            {showSection == "complete" ? "" : (
+            {showSection == "complete" || showSection == 'calendar' ? "" : (
               <p className='text-[16px] leading-[24px] text-primary'>Calendar</p>
             )}
           </div>
@@ -41,7 +41,7 @@ export default function SideMenu({ progress, showSection, setShowSection }) {
         <div className={`${showSection == "orders" ? "bg-[#ECE7FC]" : "bg-white"} w-full`}>
           <div className='flex gap-[20px] hover:cursor-pointer pl-[30px] py-[20px]' onClick={() => setShowSection('orders')}>
             <Image src="/logo/chef/sidebar/dish2.svg" height="24" width="24" className='hover:cursor-pointer' alt=''/>
-            {showSection == "complete" ? "" : (
+            {showSection == "complete" || showSection == 'calendar' ? "" : (
               <p className='text-[16px] leading-[24px] text-primary'>Orders</p>
             )}
           </div>
@@ -49,7 +49,7 @@ export default function SideMenu({ progress, showSection, setShowSection }) {
         <div className={`${showSection == "messages" ? "bg-[#ECE7FC]" : "bg-white"} w-full`}>
           <div className='flex gap-[20px] hover:cursor-pointer pl-[30px] py-[20px]' onClick={() => setShowSection('messages')}>
             <Image src="/logo/chef/sidebar/chat.svg" height="24" width="24" className='hover:cursor-pointer' alt=''/>
-            {showSection == "complete" ? "" : (
+            {showSection == "complete" || showSection == 'calendar' ? "" : (
               <p className='text-[16px] leading-[24px] text-primary'>Messages</p>
             )}
           </div>
@@ -57,7 +57,7 @@ export default function SideMenu({ progress, showSection, setShowSection }) {
         <div className={`${showSection == "rating" ? "bg-[#ECE7FC]" : "bg-white"} w-full`}>
           <div className='flex gap-[20px] hover:cursor-pointer pl-[30px] py-[20px]' onClick={() => setShowSection('rating')}>
             <Image src="/logo/chef/sidebar/star.svg" height="24" width="24" className='hover:cursor-pointer' alt=''/>
-            {showSection == "complete" ? "" : (
+            {showSection == "complete" || showSection == 'calendar' ? "" : (
               <p className='text-[16px] leading-[24px] text-primary'>Rating</p>
             )}
           </div>
@@ -65,7 +65,7 @@ export default function SideMenu({ progress, showSection, setShowSection }) {
         <div className={`${showSection == "earnings" ? "bg-[#ECE7FC]" : "bg-white"} w-full`}>
           <div className='flex gap-[20px] hover:cursor-pointer pl-[30px] py-[20px]' onClick={() => setShowSection('earnings')}>
             <Image src="/logo/chef/sidebar/wallet.svg" height="24" width="24" className='hover:cursor-pointer' alt=''/>
-            {showSection == "complete" ? "" : (
+            {showSection == "complete" || showSection == 'calendar' ? "" : (
               <p className='text-[16px] leading-[24px] text-primary'>Earnings</p>
             )}
           </div>
@@ -73,7 +73,7 @@ export default function SideMenu({ progress, showSection, setShowSection }) {
         <div className={`${showSection == "settings" ? "bg-[#ECE7FC]" : "bg-white"} w-full`}>
           <div className='flex gap-[20px] hover:cursor-pointer pl-[30px] py-[20px]' onClick={() => setShowSection('settings')}>
             <Image src="/logo/chef/sidebar/setting.svg" height="24" width="24" className='hover:cursor-pointer' alt=''/>
-            {showSection == "complete" ? "" : (
+            {showSection == "complete" || showSection == 'calendar' ? "" : (
               <p className='text-[16px] leading-[24px] text-primary'>Profile Settings</p>
             )}
           </div>
