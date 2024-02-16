@@ -1,3 +1,4 @@
+import { StickyNavbar } from "@/components/header";
 import AllDish from "./all-dishes";
 import ChefAbout from "./chef-about";
 import Location from "./location";
@@ -6,6 +7,7 @@ import Todays from "./todays";
 export default function ChefProfile() {
   return (
     <>
+      <StickyNavbar />
       <div className="bg-[#ECE7FC] w-full">
         <div className="flex justify-end items-center gap-[20px] py-[30px] container mx-auto px-[5%] md:px-0 mb-[30px]">
           <div className="max-w-[200px] w-full h-[48px] bg-[#7E5CEB] text-[white] rounded-[5px] text-[14px] md:text-[16px] font-[700] leading-[24px] flex justify-center items-center">Follow Chef</div>

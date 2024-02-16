@@ -11,6 +11,7 @@ import Rating from './section-rating'
 import Earnings from './section-earnings'
 import ChefSideDrawer from './side-drawer'
 import { Button } from '@material-tailwind/react'
+import { StickyNavbar } from '@/components/header'
 
 export function Section(showSection, progress) {
   if (showSection == 'complete')
@@ -36,16 +37,19 @@ export default function Page() {
   const [open, setOpen] = useState(false);
   const [showSection, setShowSection] = useState('calendar')
   return (
-    <div className='flex'>
-      <ChefSideDrawer open={open} setOpen={setOpen} progress={progress} setShowSection={setShowSection} showSection={showSection} />
-      <div className='hidden lg:block'>
-        <SideMenu progress={progress} setShowSection={setShowSection} showSection={showSection} />
-      </div>
+    <>
+      <StickyNavbar />
+      <div className='flex'>
+        <ChefSideDrawer open={open} setOpen={setOpen} progress={progress} setShowSection={setShowSection} showSection={showSection} />
+        <div className='hidden lg:block'>
+          <SideMenu progress={progress} setShowSection={setShowSection} showSection={showSection} />
+        </div>
 
-      <div className='w-full'>
-        {/* <Button onClick={()=>setOpen(true)}>Open Drawer</Button> */}
-        {Section(showSection, progress)}
+        <div className='w-full'>
+          {/* <Button onClick={()=>setOpen(true)}>Open Drawer</Button> */}
+          {Section(showSection, progress)}
+        </div>
       </div>
-    </div>
+    </>
   )
 }

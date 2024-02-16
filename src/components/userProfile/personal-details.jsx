@@ -27,12 +27,14 @@ export default function PersonalDetails() {
       <div className='flex md:flex-col gap-[20px] col-span-2 md:col-span-1'>
         <Button
           color='blue'
+          className='p-2'
         >
           Edit Profile
         </Button>
         <Button
           color='blue'
           variant="outlined"
+          className='p-2'
         >
           Change Password
         </Button>

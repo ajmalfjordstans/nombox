@@ -8,6 +8,7 @@ import Orders from './orders';
 import Payments from './payments';
 import DrawerContent from './drawer';
 import Image from 'next/image';
+import { StickyNavbar } from '@/components/header';
 
 export function RenderCategoryComponent() {
   const section = useSearchParams().get('section')
@@ -39,23 +40,26 @@ export default function UserProfile() {
   // };
 
   return (
-    <div className='flex'>
-      <UserSideDrawer open={open} setOpen={setOpen} />
-      <div className='hidden lg:block'>
-        <DrawerContent />
-      </div>
-      <div className='overflow-hidden w-full'>
-        <Image
-          src="/logo/Profile.svg"
-          height={24}
-          width={24}
-          alt='icon'
-          onClick={() => setOpen(true)}
-          className='m-[15px] lg:hidden'
-        ></Image>
-        <Suspense fallback={<div>Loading...</div>}>
-          {RenderCategoryComponent()}
-        </Suspense>
+    <div className='h-[100dvh]'>
+      <StickyNavbar />
+      <div className='flex h-[90dvh]'>
+        <UserSideDrawer open={open} setOpen={setOpen} />
+        <div className='hidden lg:block'>
+          <DrawerContent />
+        </div>
+        <div className='overflow-y-scroll w-full'>
+          {/* <Image
+            src="/logo/Profile.svg"
+            height={24}
+            width={24}
+            alt='icon'
+            onClick={() => setOpen(true)}
+            className='m-[15px] lg:hidden'
+          ></Image> */}
+            <Suspense fallback={<div>Loading...</div>}>
+              {RenderCategoryComponent()}
+            </Suspense>
+        </div>
       </div>
     </div>
   )

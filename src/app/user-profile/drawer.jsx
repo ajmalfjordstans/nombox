@@ -11,7 +11,7 @@ export default function DrawerContent({ closeDrawer, }) {
   const section = searchParams.get('section')
   return (
 
-    <div className='w-[344px] bg-white flex flex-col h-[100vh] pb-[46px]'>
+    <div className='w-[344px] bg-white flex flex-col h-[90dvh] pb-[46px]'>
       <div >
         <div className='flex gap-[30px] relative p-[30px]'>
           <Image

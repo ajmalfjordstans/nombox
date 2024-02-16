@@ -28,8 +28,8 @@ export function StickyNavbar() {
   })
 
   return (
-    <Navbar className="sticky top-0 z-10 max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 !shadow-none border-0">
-      <div className="flex items-center justify-between">
+    <div className="sticky top-0 z-10 max-w-full rounded-none px-4 lg:px-8 !shadow-none border-0 h-[10dvh] ">
+      <div className="flex items-center justify-between h-full">
         <Link href="/">
           <img
             className="h-[58px] object-cover object-center"
@@ -41,10 +41,10 @@ export function StickyNavbar() {
           <div className="mr-4 hidden lg:block">
             <div className="flex gap-[21px]">
               <Link href="/cook">
-                <div className="w-[178px] h-[48px] rounded-[69px] bg-[#FF922C] flex justify-center items-center hover:cursor-pointer text-[13px]">Register As A Cook</div>
+                <div className="w-[178px] h-[48px] rounded-[69px] bg-[#FF922C] flex justify-center items-center hover:cursor-pointer text-[13px] text-white font-[500]">Register As A Cook</div>
               </Link>
               <Link href="/user">
-                <div className="w-[178px] h-[48px] rounded-[69px] bg-[#7E5CEB] flex justify-center items-center hover:cursor-pointer text-[13px]" >Login / Register</div>
+                <div className="w-[178px] h-[48px] rounded-[69px] bg-[#7E5CEB] flex justify-center items-center hover:cursor-pointer text-[13px] text-white font-[500]" >Login / Register</div>
               </Link>
             </div>
           </div>
@@ -97,7 +97,7 @@ export function StickyNavbar() {
           <div className="w-[178px] h-[48px] rounded-[69px] bg-[#7E5CEB] flex justify-center items-center hover:cursor-pointer text-[13px] mt-5" >Login / Register</div>
         </Link>
       </Collapse>
-    </Navbar>
+    </div>
 
   );
 }

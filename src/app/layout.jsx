@@ -7,6 +7,7 @@ const poppins = Poppins({
   subsets: ['latin'],
   weight: ["300", "400", "500", "700", "900"],
   display: "swap",
+  variable: "--font-poppins"
 })
 
 export const metadata = {
@@ -21,11 +22,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} bg-[#F8FBFF]`}>
+      <body className={`${poppins.className} ${poppins.variable} bg-[#F8FBFF]`}>
         <Layout>
-          <StickyNavbar />
+          {/* <StickyNavbar /> */}
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </Layout>
       </body>
     </html>

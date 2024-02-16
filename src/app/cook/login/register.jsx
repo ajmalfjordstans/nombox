@@ -9,34 +9,21 @@ export default function RegisterForm({ setLogin }) {
   return (
     <div className="text-primary pb-8 px-[5%] md:px-[8%] pt-[1vh]">
       <div className="w-full flex justify-center ">
-        <span className="text-[24px] md:text-[30px] font-[700] text-center">Create your account</span>
+        <span className="text-[24px] md:text-[30px] font-[700] text-center">Register as a cook</span>
       </div>
       <div className="mt-[10px] md:mt-[40px]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-5">
           <div className="md:mb-4">
-            <span className="text-[14px] md:text-[16px] font-[400] text-primary">First Name</span>
+            <span className="text-[14px] md:text-[16px] font-[400] text-primary">Full Name</span>
             <Input
               size="lg"
-              placeholder="John"
+              placeholder="Full name"
               className="!border-t-blue-gray-200 focus:!border-t-[#2E266F]"
               labelProps={{
                 className: "before:content-none after:content-none",
               }}
             />
           </div>
-
-          <div className="md:mb-4">
-            <span className="text-[14px] md:text-[16px] font-[400] text-primary">Last Name</span>
-            <Input
-              size="lg"
-              placeholder="Doe"
-              className="!border-t-blue-gray-200 focus:!border-t-[#2E266F]"
-              labelProps={{
-                className: "before:content-none after:content-none",
-              }}
-            />
-          </div>
-
           <div className="md:mb-4">
             <span className="text-[14px] md:text-[16px] font-[400] text-primary">Email</span>
             <Input
@@ -54,6 +41,17 @@ export default function RegisterForm({ setLogin }) {
             <Input
               size="lg"
               placeholder="123-456-7890"
+              className="!border-t-blue-gray-200 focus:!border-t-[#2E266F]"
+              labelProps={{
+                className: "before:content-none after:content-none",
+              }}
+            />
+          </div>
+          <div className="md:mb-4">
+            <span className="text-[14px] md:text-[16px] font-[400] text-primary">Address</span>
+            <Input
+              size="lg"
+              placeholder="Home Address"
               className="!border-t-blue-gray-200 focus:!border-t-[#2E266F]"
               labelProps={{
                 className: "before:content-none after:content-none",
@@ -96,7 +94,7 @@ export default function RegisterForm({ setLogin }) {
         </div>
         <div className="flex justify-end">
           <Button className="mt-3 bg-[#7E5CEB] md:max-w-[350px]" fullWidth>
-            Sign up
+            Register
           </Button>
         </div>
         <div className="mt-10 w-full flex justify-center">

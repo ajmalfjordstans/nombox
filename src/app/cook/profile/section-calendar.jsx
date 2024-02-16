@@ -79,6 +79,8 @@ export function Timeline() {
         workHours={workHours}
         startHour='07:00' endHour='23:00'
         workDays={workingDays}
+        // allowDragAndDrop={true}
+        allowResizing={true}
       >
         <ViewsDirective>
           <ViewDirective option='Week' />
