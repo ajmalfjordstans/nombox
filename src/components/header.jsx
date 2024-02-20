@@ -28,7 +28,7 @@ export function StickyNavbar() {
   })
 
   return (
-    <div className="sticky top-0 z-10 max-w-full rounded-none px-4 lg:px-8 !shadow-none border-0 h-[10dvh] ">
+    <div className="sticky top-0 z-10 max-w-full rounded-none px-4 lg:px-8 !shadow-none border-0 h-[10dvh] bg-white">
       <div className="flex items-center justify-between h-full">
         <Link href="/">
           <img
