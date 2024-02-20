@@ -13,7 +13,8 @@ import { date } from 'yup';
 import { Button } from '@material-tailwind/react';
 
 registerLicense(
-  'Ngo9BigBOggjHTQxAR8/V1NAaF5cWWJCfExwWmFZfVpgcF9FZlZUR2YuP1ZhSXxXdkRgWX9ac3JQRWFfVEA='
+  // 'Ngo9BigBOggjHTQxAR8/V1NAaF5cWWJCfExwWmFZfVpgcF9FZlZUR2YuP1ZhSXxXdkRgWX9ac3JQRWFfVEA='
+  'Ngo9BigBOggjHTQxAR8/V1NAaF1cWmhIfEx1RHxQdld5ZFRHallYTnNWUj0eQnxTdEFjW31ecHxRQmFeVUx0XA=='
 )
 
 export function Dishes() {
